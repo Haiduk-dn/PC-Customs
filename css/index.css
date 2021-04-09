@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+*{
+    font-family: Lexend;
+}
+h2 {
+    color: crimson;
+    font-size: 26px;
+}
+.logo {
+    color: rgb(161, 22, 143);
+    font-size: 32px;
+}
+h1 {
+    color: crimson;
+    font-size: xx-large;
+}
+.subheading {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.services img {
+    max-width: 300px;
+}
+.halloffame img {
+    max-width: 400px;
+
+}
+.products img {
+    max-width: 300px;
+}
+.blog img {
+    max-width: 180px;
+    border: solid 2px;
+    border-color: darkblue;
+    border-radius: 10%;
+}
+button {
+    background-color: crimson;
+    font-weight: bold;
+    border: solid 2px;
+    
+}
+
