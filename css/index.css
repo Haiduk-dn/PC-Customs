@@ -1,9 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
-*{
-    font-family: Lexend;
+:root{
+    font-family: Lexend, sans-serif;
+    color: white;
+    --main-color: white;
+    --accent-color: crimson;
+    scroll-behavior: smooth;
+    background-color: black;
 }
-h2 {
-    color: crimson;
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 980px;
+    margin: auto;
+}
+header .logo {
+    font-size: 35px;
+    color:var(--accent-color);
+    text-transform: uppercase;
+    text-align: left;
+}
+header .menu a {
+    display: block;
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size: 20px;
+}
+header .menu a:hover {
+    font-weight: bold;
+}
+@media (min-width: 580px) {
+    header nav {
+        display: flex;
+    }
+    header .menu {
+        display: flex;  
+        align-items: left;  
+        justify-content: space-around;
+        flex: 1;
+    }
+    .subheading {
+        background-image:url(../img/background.jpg);
+        background-size: cover;
+        background-position:center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 400px;
+        font-size: 40px;
+        color: var(--accent-color);
+
+    }
+    .about-us h2 {
+        color: var(--accent-color);
+    }    
+  
+#services {
+    color: var(--accent-color);
+}    
+.services-list {
+    display: flex;
+       
+}
+main .services-list .services img {
+    display: block;
+    width: 100%;
+    border: 3px solid var(--accent-color);
+    width: 350px;
+       
+    }
+main .services-list .services {
+    margin: 5px;
+  }
+
+#halloffame {
+    color: var(--accent-color);
+}
+main .halloffame img {
+    width: 100%;
+    border: 3px solid var(--accent-color);
+    width: 300px;
+    margin: 5px;
+       
+    }
+main .halloffame {
+   margin: 5px;
+}
+main .halloffame .button {
+  margin: auto;
+}
+#products {
+    color: var(--accent-color);
+}
+main .products-list img {
+    width: 100%;
+    border: 3px solid var(--accent-color);
+    width: 350px;
+    margin: 5px;
+}
+main .products-list {
+    display: flex;
+    flex-direction:inherit;
+}
+#blog {
+    color: var(--accent-color);
+}
+main .blog img {
+    width: 100%;
+    border: 3px solid var(--accent-color);
+    width: 150px;
+    margin: 5px;
+}
+main .blog {
+    display: flex;
+    flex-direction: column;
+}
+#contacts {
+    color: var(--accent-color);
+}
+/*controls*/
+.button {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid var(--accent-color) ;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color:var(--accent-color);
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.7s;
+    background-color: transparent;
+}
+.button:hover {
+    color: white;
+    background-color:transparent;
+    cursor: pointer;
+}
+/*h2 {
+    color: ;
     font-size: 26px;
 }
 .logo {
