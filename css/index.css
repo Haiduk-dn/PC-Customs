@@ -30,7 +30,7 @@ header .menu a {
 header .menu a:hover {
     font-weight: bold;
 }
-@media (min-width: 580px) {
+@media (min-width: 480px) {
     header nav {
         display: flex;
     }
@@ -40,6 +40,7 @@ header .menu a:hover {
         justify-content: space-around;
         flex: 1;
     }
+}
     .subheading {
         background-image:url(../img/background.jpg);
         background-size: cover;
@@ -56,14 +57,9 @@ header .menu a:hover {
     .about-us h2 {
         color: var(--accent-color);
     }    
-  
 #services {
     color: var(--accent-color);
 }    
-.services-list {
-    display: flex;
-       
-}
 main .services-list .services img {
     display: block;
     width: 100%;
@@ -74,22 +70,21 @@ main .services-list .services img {
 main .services-list .services {
     margin: 5px;
   }
-
 #halloffame {
     color: var(--accent-color);
 }
 main .halloffame img {
     width: 100%;
     border: 3px solid var(--accent-color);
-    width: 300px;
-    margin: 5px;
-       
-    }
-main .halloffame {
-   margin: 5px;
+    max-width: 300px;
+    max-height: 300px;
+    min-height: 300px;   
 }
 main .halloffame .button {
   margin: auto;
+}
+main .halloffame {
+    margin: 5px;
 }
 #products {
     color: var(--accent-color);
@@ -99,10 +94,6 @@ main .products-list img {
     border: 3px solid var(--accent-color);
     width: 350px;
     margin: 5px;
-}
-main .products-list {
-    display: flex;
-    flex-direction:inherit;
 }
 #blog {
     color: var(--accent-color);
@@ -119,6 +110,65 @@ main .blog {
 }
 #contacts {
     color: var(--accent-color);
+}
+@media (min-width: 440px) {
+    .halloffame {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    .halloffame {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    .halloffame {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 440px) {
+    .services-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    .services-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    .services-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 440px) {
+    .products-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    .products-list {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 980px) {
+    .products-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
 }
 /*controls*/
 .button {
@@ -137,43 +187,3 @@ main .blog {
     background-color:transparent;
     cursor: pointer;
 }
-/*h2 {
-    color: ;
-    font-size: 26px;
-}
-.logo {
-    color: rgb(161, 22, 143);
-    font-size: 32px;
-}
-h1 {
-    color: crimson;
-    font-size: xx-large;
-}
-.subheading {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.services img {
-    max-width: 300px;
-}
-.halloffame img {
-    max-width: 400px;
-
-}
-.products img {
-    max-width: 300px;
-}
-.blog img {
-    max-width: 180px;
-    border: solid 2px;
-    border-color: darkblue;
-    border-radius: 10%;
-}
-button {
-    background-color: crimson;
-    font-weight: bold;
-    border: solid 2px;
-    
-}
-
