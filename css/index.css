@@ -61,10 +61,11 @@ header .menu a:hover {
     color: var(--accent-color);
 }    
 main .services-list .services img {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     border: 3px solid var(--accent-color);
-    width: 350px;
+    
        
     }
 main .services-list .services {
@@ -88,11 +89,16 @@ main .halloffame {
 }
 #products {
     color: var(--accent-color);
+    
 }
 main .products-list img {
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 250px;
+    max-height: 250px;
+    min-height: 250px;
     border: 3px solid var(--accent-color);
-    width: 350px;
+    width: 250px;
     margin: 5px;
 }
 #blog {
