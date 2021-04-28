@@ -101,6 +101,28 @@ main .products-list img {
     width: 250px;
     margin: 5px;
 }
+#our-partners {
+    color: var(--accent-color);
+    width: 150px;
+    
+    text-align: center;
+}
+#our-partners img{
+    width: 100%;
+    display: none;
+    max-width: 150px;
+    max-height: 150px;
+    min-height: 150px;
+
+}
+
+#our-partners img:first-child{
+    display: block;
+}
+
+.buttons {
+    margin-top: 20px;
+}                
 #blog {
     color: var(--accent-color);
 }
